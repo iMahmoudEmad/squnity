@@ -1,0 +1,67 @@
+@import "../node_modules/owl.carousel/dist/assets/owl.carousel.css";
+@import "../node_modules/owl.carousel/dist/assets/owl.theme.default.css";
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('./assets/fonts/AvenirLTStd-Roman.otf') format("truetype");
+}
+
+body {
+  color: #343a40;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.mt-80 {
+  margin-top: 80px;
+}
+
+button.owl-next,
+button.owl-prev {
+  margin: 0 !important;
+}
+
+button.owl-next,
+button.owl-prev {
+  width: 3rem;
+  height: 3rem;
+  background-color: #fff !important;
+  border-radius: 50% !important;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto !important;
+  outline: none;
+  border: none;
+}
+
+button.owl-next span,
+button.owl-prev span {
+  background-color: #fff;
+  font-size: 1.5rem;
+}
+
+
+button.owl-next {
+  right: 1rem;
+}
+
+button.owl-prev {
+  left: 1rem;
+}
+
+.owl-theme .owl-nav [class*='owl-']:hover {
+  background-color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 0;
+}

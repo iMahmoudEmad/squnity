@@ -1,0 +1,20 @@
+<section class="team text-center">
+  <app-breadcrumb [page]="'team'"></app-breadcrumb>
+  <div class="container">
+    <div class="row">
+      <div class="team-content d-flex flex-wrap">
+        <div class="col-md-4" *ngFor="let member of members">
+          <div class="team-member">
+            <img [src]="member.picture" [alt]="member.name" [title]="member.name">
+            <div class="content">
+              <h2>{{member.name}}</h2>
+              <p>
+                {{member.bio}}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

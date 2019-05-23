@@ -1,0 +1,26 @@
+.page-not-found {
+  padding: 3rem 0 0;
+
+  .content {
+    width: 30%;
+
+    h2 {
+      font-weight: 700;
+      margin-bottom: 1rem;
+      text-transform: capitalize;
+    }
+
+    button.btn-default {
+      background-color: #3598FE;
+      color: #fff;
+      text-transform: capitalize;
+      padding: .7rem 3rem;
+      box-shadow: none;
+      text-align: center;
+    }
+  }
+
+  img {
+    width: 300px;
+  }
+}

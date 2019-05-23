@@ -1,0 +1,34 @@
+.check-services {
+  padding: 5rem 0;
+  //background-color: #F8FCFF;
+  background-color: #343a40;
+
+  .content {
+    background-color: #fff;
+    width: 100%;
+    padding: 5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 3rem 0 rgba(0, 0, 0, 0.08);
+
+    h2 {
+      color: #3598FE;
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      text-transform: capitalize;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 0;
+    }
+
+    button.btn-default {
+      background-color: #3598FE;
+      font-size: .9rem;
+      color: #fff;
+      text-transform: uppercase;
+      padding: 0.7rem 4rem;
+    }
+  }
+}

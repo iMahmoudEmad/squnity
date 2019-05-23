@@ -1,0 +1,20 @@
+<section class="breadcrumb mt-80">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <!--            <li class="breadcrumb-item" *ngFor="let page of pages; let last = last">-->
+            <!--              <a *ngIf="!last" [routerLink]="['/' + page]">{{page}}</a>-->
+            <!--              <a *ngIf="last" aria-current="page">{{page}}</a>-->
+            <!--            </li>-->
+            <li class="breadcrumb-item"><a [routerLink]="['/']" title="Go to home">Home</a></li>
+            <li class="breadcrumb-item" aria-current="page">
+              {{page}}
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>

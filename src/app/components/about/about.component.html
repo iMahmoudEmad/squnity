@@ -1,0 +1,62 @@
+<section class="about mt-80">
+  <div class="container">
+    <!--    <div class="about-header">-->
+    <!--      <h2 class="text-center">About squnity</h2>-->
+    <!--    </div>-->
+    <div class="row">
+      <div class="content">
+        <h2>out story</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, culpa, doloribus eius eligendi ex
+          illo ipsam ipsum iure iusto quibusdam ratione soluta. Ad ipsam laborum laudantium magnam nisi. Eveniet,
+          sapiente. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias assumenda minima optio velit
+          voluptas. Cupiditate dolor modi molestias nisi nobis obcaecati sequi temporibus voluptatem voluptates?
+          Distinctio error eum qui. Vitae.</p>
+      </div>
+    </div>
+    <div class="row justify-content-between align-items-center">
+      <div class="about-mission">
+        <div class="content">
+          <h2>Our mission</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eum velit vero! Ab at dolorum inventore magni
+            maxime neque nisi reprehenderit, tenetur? Alias at debitis distinctio nesciunt, quibusdam repellendus
+            similique?</p>
+        </div>
+      </div>
+      <div class="about-vision">
+        <div class="content">
+          <h2>Our Vision</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eum velit vero! Ab at dolorum inventore magni
+            maxime neque nisi reprehenderit, tenetur? Alias at debitis distinctio nesciunt, quibusdam repellendus
+            similique?
+          </p>
+        </div>
+      </div> <!-- .content -->
+    </div> <!-- .row -->
+    <div class="row">
+      <div class="content">
+        <h2>our clients</h2>
+        <owl-carousel [options]="owlConfig"
+                      [carouselClasses]="['owl-theme', 'sliding']">
+          <div class="item" *ngFor="let item of [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18];let i = index">
+            <img [src]="'./assets/img/' + slider.image" [alt]="slider.title">
+          </div> <!-- .item -->
+        </owl-carousel>
+      </div> <!-- .content -->
+    </div> <!-- .row -->
+    <div class="row">
+      <div class="content">
+        <h2>our heros</h2>
+        <div class="heros d-flex flex-wrap">
+          <div class="col-md-4 col-sm-6 col-xs-12" *ngFor="let hero of heros">
+            <div class="content">
+              <img [src]="hero.picture" [alt]="hero.name" [title]="hero.name">
+              <h2>{{hero.name}}</h2>
+              <p>{{hero.bio}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> <!-- .container -->
+</section>

@@ -1,0 +1,64 @@
+<footer>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <img src="./../../../assets/img/logo-white.png" alt="Squnity Logo" title="Squnity Logo">
+      </div>
+      <div class="col-md-8">
+        <div class="row">
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li *ngFor="let item of menu | slice:0:3">
+                <a [routerLink]="item.link"
+                   [routerLinkActive]="['active']"
+                   [routerLinkActiveOptions]="{exact: true}">
+                  {{item.name}}
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li *ngFor="let item of menu | slice:3:7">
+                <a [routerLink]="item.link"
+                   [routerLinkActive]="['active']"
+                   [routerLinkActiveOptions]="{exact: true}">
+                  {{item.name}}
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <address>
+              <p>squnity 35s, adly</p>
+              <p>Cairo, egypt</p>
+              <p>+20 111 222 333</p>
+            </address>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="copyright">
+    <div class="container">
+      <div class="row">
+        <div class="d-flex justify-content-between align-items-center w-100 ">
+          <ul class="list-unstyled d-flex justify-content-center align-items-center ">
+            <li *ngFor="let item of socialLinks">
+              <a [href]="item.link" target="_blank">
+                <i *ngIf="item.icon == 'facebook'" class="fab fa-{{item.icon}}-f"></i>
+                <i *ngIf="item.icon != 'facebook'" class="fab fa-{{item.icon}}"></i>
+              </a>
+            </li>
+          </ul>
+
+          <h4>
+            all copyrights reserved <a href="/">squnity</a> &copy; {{date | date: 'y'}} cairo, egypt
+          </h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
