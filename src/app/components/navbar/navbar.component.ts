@@ -12,7 +12,7 @@ export class NavbarComponent implements OnInit {
     {name: 'About US', link: 'about'},
     {name: 'Services', link: 'services'},
     {name: 'Training', link: 'training'},
-    // {name: 'Team', link: 'team'},
+    {name: 'Team', link: 'team'},
     {name: 'Blog', link: 'blog'},
     {name: 'Contact Us', link: 'contact'}
   ];

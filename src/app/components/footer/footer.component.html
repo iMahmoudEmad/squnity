@@ -9,7 +9,7 @@
         <div class="row">
           <div class="col-md-4">
             <ul class="list-unstyled">
-              <li *ngFor="let item of menu | slice:0:3">
+              <li *ngFor="let item of menu | slice:0:4">
                 <a [routerLink]="item.link"
                    [routerLinkActive]="['active']"
                    [routerLinkActiveOptions]="{exact: true}">
@@ -20,7 +20,7 @@
           </div>
           <div class="col-md-4">
             <ul class="list-unstyled">
-              <li *ngFor="let item of menu | slice:3:7">
+              <li *ngFor="let item of menu | slice:4:8">
                 <a [routerLink]="item.link"
                    [routerLinkActive]="['active']"
                    [routerLinkActiveOptions]="{exact: true}">

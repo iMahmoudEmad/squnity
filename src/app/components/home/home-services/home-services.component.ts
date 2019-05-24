@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-home-services',
-  templateUrl: './services.component.html',
-  styleUrls: ['./services.component.scss']
+  templateUrl: './home-services.component.html',
+  styleUrls: ['./home-services.component.scss']
 })
 export class HomeServicesComponent implements OnInit {
   services = [
@@ -28,6 +28,7 @@ export class HomeServicesComponent implements OnInit {
       description: 'while most people enjoy casino gambiling, sports betting lottery and bingo playing.'
     },
   ];
+
   constructor() { }
 
   ngOnInit() {

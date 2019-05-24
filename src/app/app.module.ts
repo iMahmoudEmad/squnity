@@ -20,10 +20,12 @@ import {TimelineComponent} from './components/home/timeline/timeline.component';
 import {CheckServicesComponent} from './components/home/check-services/check-services.component';
 import {BreadcrumbComponent} from './components/breadcrumb/breadcrumb.component';
 import {NotFoundComponent} from './components/not-found/not-found.component';
-import {HomeServicesComponent} from './components/home/services/services.component';
 import {ServicesComponent} from './components/services/services.component';
 import { OurClientsComponent } from './components/home/our-clients/our-clients.component';
 import { ShortServicesComponent } from './components/home/short-services/short-services.component';
+import { HallOfFameComponent } from './components/home/hall-of-fame/hall-of-fame.component';
+import {HomeServicesComponent} from './components/home/home-services/home-services.component';
+import {WhyChooseSqunityComponent} from './components/home/why-choose-squnity/why-choose-squnity.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +49,9 @@ import { ShortServicesComponent } from './components/home/short-services/short-s
     BreadcrumbComponent,
     NotFoundComponent,
     OurClientsComponent,
-    ShortServicesComponent
+    ShortServicesComponent,
+    HallOfFameComponent,
+    WhyChooseSqunityComponent
   ],
   imports: [
     BrowserModule,

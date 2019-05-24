@@ -1,0 +1,36 @@
+.platforms {
+  padding-top: 4rem;
+
+  .title {
+    font-weight: 700;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+  }
+
+  .content {
+    padding: 2rem 0 0;
+
+    @media(max-width: 767px) {
+      display: block !important;
+    }
+
+    .platform {
+      padding: 3rem 2rem;
+      background-color: #FBFBFB;
+      margin-bottom: 2rem;
+
+      h4 {
+        font-size: 1rem;
+        font-weight: 700;
+        text-transform: capitalize;
+      }
+
+      img {
+        width: 4rem;
+        height: 4rem;
+        margin-right: 2rem;
+      }
+    }
+  }
+}

@@ -10,6 +10,20 @@
     margin-bottom: 1rem;
   }
 
+  @media(max-width: 767px) {
+    h2 {
+      font-size: 1.2rem !important;
+    }
+
+    form {
+      margin: 1rem;
+
+      input {
+        width: 80% !important;
+      }
+    }
+  }
+
   form {
     display: flex;
     justify-content: center;

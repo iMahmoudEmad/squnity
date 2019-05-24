@@ -23,7 +23,7 @@ export class FooterComponent implements OnInit {
     {name: 'about us', link: 'about'},
     {name: 'services', link: 'services'},
     {name: 'training', link: 'training'},
-    // {name: 'team', link: 'team'},
+    {name: 'team', link: 'team'},
     {name: 'blog', link: 'blog'},
     {name: 'contact us', link: 'contact'},
   ];
