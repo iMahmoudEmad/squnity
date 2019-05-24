@@ -2,50 +2,10 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-md-4">
-        <img src="./../../../assets/img/logo-white.png" alt="Squnity Logo" title="Squnity Logo">
-      </div>
-      <div class="col-md-8">
-        <div class="row">
-          <div class="col-md-4">
-            <ul class="list-unstyled">
-              <li *ngFor="let item of menu | slice:0:4">
-                <a [routerLink]="item.link"
-                   [routerLinkActive]="['active']"
-                   [routerLinkActiveOptions]="{exact: true}">
-                  {{item.name}}
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <ul class="list-unstyled">
-              <li *ngFor="let item of menu | slice:4:8">
-                <a [routerLink]="item.link"
-                   [routerLinkActive]="['active']"
-                   [routerLinkActiveOptions]="{exact: true}">
-                  {{item.name}}
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <address>
-              <p>squnity 35s, adly</p>
-              <p>Cairo, egypt</p>
-              <p>+20 111 222 333</p>
-            </address>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="copyright">
-    <div class="container">
-      <div class="row">
-        <div class="d-flex justify-content-between align-items-center w-100 ">
-          <ul class="list-unstyled d-flex justify-content-center align-items-center ">
+      <div class="col-md-3 col-xs-12">
+        <div class="logo">
+          <img src="./../../../assets/img/logo-white.png" alt="Squnity Logo" title="Squnity Logo">
+          <ul class="list-unstyled">
             <li *ngFor="let item of socialLinks">
               <a [href]="item.link" target="_blank">
                 <i *ngIf="item.icon == 'facebook'" class="fab fa-{{item.icon}}-f"></i>
@@ -53,12 +13,38 @@
               </a>
             </li>
           </ul>
-
-          <h4>
-            all copyrights reserved <a href="/">squnity</a> &copy; {{date | date: 'y'}} cairo, egypt
-          </h4>
         </div>
       </div>
-    </div>
+      <div class="col-md-6 col-xs-12">
+        <div class="content links d-flex justify-content-center align-items-center">
+          <div class="col-md-4" *ngFor="let item of [1, 2, 3]">
+            <h5 class="footer-title">Overview</h5>
+            <ul class="list-unstyled">
+              <li *ngFor="let item of [1, 2, 3]">
+                <a [routerLink]="'#'">Demo</a>
+              </li>
+            </ul>
+            <h5 class="footer-title">Overview</h5>
+            <ul class="list-unstyled">
+              <li *ngFor="let item of [1, 2, 3]">
+                <a [routerLink]="'#'">Demo</a>
+              </li>
+            </ul>
+          </div> <!-- .col-md-4 -->
+        </div> <!-- .content -->
+      </div> <!-- .col-md-6 -->
+      <div class="col-md-3 col-xs-12">
+        <div class="content address">
+          <ul class="list-unstyled">
+            <li *ngFor="let item of [1, 2, 3, 4, 5, 6, 7, 8, 9]">
+              Cairo, Egypt
+            </li>
+          </ul>
+        </div> <!-- .content -->
+      </div> <!-- .col-md-3 -->
+    </div> <!-- .row -->
+  </div> <!-- .container -->
+  <div class="copyright d-flex justify-content-center align-items-center">
+    <p>&copy; {{date | date: 'y'}} <a [routerLink]="''">Squnity</a>, Inc. All rights reserved.</p>
   </div>
 </footer>

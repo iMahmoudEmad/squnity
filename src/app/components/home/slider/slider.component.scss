@@ -36,8 +36,13 @@ header {
       line-height: 1.8rem;
     }
 
-    img{
-      margin-top: 4rem;
+    img {
+      width:60%;
+      margin: 4rem auto auto;
+
+      @media(max-width: 500px) {
+        width: 100%;
+      }
     }
   }
 }

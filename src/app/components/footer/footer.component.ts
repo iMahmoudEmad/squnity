@@ -6,6 +6,7 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
+  date = new Date();
   services = [
     'vulnerability assessment',
     'Nework & Infrastructure Penetration Testing',
@@ -35,8 +36,6 @@ export class FooterComponent implements OnInit {
     {link: '####', icon: 'instagram'},
     {link: '####', icon: 'youtube'}
   ];
-
-  date = new Date();
 
   constructor() {
   }

@@ -26,6 +26,7 @@ import { ShortServicesComponent } from './components/home/short-services/short-s
 import { HallOfFameComponent } from './components/home/hall-of-fame/hall-of-fame.component';
 import {HomeServicesComponent} from './components/home/home-services/home-services.component';
 import {WhyChooseSqunityComponent} from './components/home/why-choose-squnity/why-choose-squnity.component';
+import { HeaderSectionComponent } from './components/header-section/header-section.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import {WhyChooseSqunityComponent} from './components/home/why-choose-squnity/wh
     OurClientsComponent,
     ShortServicesComponent,
     HallOfFameComponent,
-    WhyChooseSqunityComponent
+    WhyChooseSqunityComponent,
+    HeaderSectionComponent
   ],
   imports: [
     BrowserModule,

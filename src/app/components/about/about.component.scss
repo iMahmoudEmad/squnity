@@ -1,58 +1,60 @@
 .about {
   padding: 4rem 0;
 
-  &-mission, &-vision {
-    width: 50%;
-  }
-
-  &-mission {
-    padding-right: 1rem;
-  }
-
-  &-vision {
-    padding-left: 1rem;
-  }
-
-  h2 {
-    font-size: 1.9rem;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-  }
-
-  .content {
-    width: 100%;
-    padding: 2rem 4rem;
+  h2.title {
     margin-bottom: 3rem;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     text-align: center;
-    box-shadow: 0 0 16px rgba(#000, .08);
+    position: relative;
+  }
+
+  //Start Who-We-Are
+  .who-we-are {
+    position: relative;
+    background-color: #fff;
+    margin-top: -10rem;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    border: 1px solid #ddd;
     border-radius: 1rem;
 
-    @media(max-width: 768px) {
-      padding: 2rem;
+    @media(max-width: 767px) {
+      display: block !important;
     }
 
-    h2.clients-title{
-      margin-top: 1rem;
-      margin-bottom: 3rem;
+    .content {
+      padding: 1rem;
+
+      h3 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+      }
+
+      p {
+        font-size: 1.1rem;
+        line-height: 1.7rem;
+        margin-bottom: 0;
+      }
     }
 
-    p {
-      font-size: 1rem;
-      line-height: 1.7rem;
+    img {
+      width: 100%
     }
   }
 
+  //End Who-We-Are
 
-  .item {
+  //Start Make-Us-Special
+  .make-us-special {
+    padding: 4rem 0;
+    background-image: url("./../../../assets/img/about-one.jpg");
+    background-size: cover;
+    background-attachment: fixed;
     position: relative;
-    height: 150px;
-
-    &:hover {
-      &:before {
-        background-color: transparent;
-      }
-    }
 
     &:before {
       content: '';
@@ -61,49 +63,133 @@
       right: 0;
       bottom: 0;
       left: 0;
-      background-color: rgba(#fff, .5);
       width: 100%;
       height: 100%;
-      border-radius: 50%;
+      background-color: rgba(#000, .8);
     }
 
-    img {
-      width: 100%;
-      height: 100%;
-      border-radius: 50%;
+    h2.title {
+      color: #fff;
+    }
+
+    .col-md-6:last-of-type .content {
+      margin-bottom: 0;
+    }
+
+
+    .content {
+      padding: 2rem;
+      margin-bottom: 2rem;
+      background-color: #fff;
+      box-shadow: 0 0 16px rgba(#000, .08);
+      transition: all .2s ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      @media (max-width: 767px) {
+        display: block !important;
+        text-align: center;
+
+        img {
+          margin-bottom: 1rem;
+        }
+
+        &-data {
+          padding-left: 0 !important;
+        }
+      }
+
+      img {
+        width: 80px;
+        height: 80px;
+      }
+
+      &-data {
+        padding-left: 2rem;
+
+        h4 {
+          margin-bottom: .5rem;
+          font-size: 1.2rem;
+          font-weight: 700;
+          color: #D96A78;
+        }
+
+        p {
+          font-size: 1rem;
+          line-height: 1.5rem;
+          color: #b1b1b1;
+          margin-bottom: 0;
+        }
+      }
     }
   }
 
-  .heros {
-    .content {
-      padding: 1rem;
+  //End Make-Us-Special
 
-      img {
-        width: 100%;
-        height: 200px;
-        border-radius: 1rem;
-        margin-bottom: 1rem;
+  //Start What-You-Got
+  .what-you-got {
+    padding: 4rem 0 0;
+    //background-color: #fbfbfb;
+
+    .content {
+      &-data {
+        width: 33.33%;
+        height: 400px;
+        padding: 2rem;
+        background-color: #fbfbfb;
+        transition: all .2s ease-in-out;
+
+        &:hover {
+          background-color: #3598FE;
+
+          h3, p {
+            color: #fff;
+          }
+        }
+
+        @media(max-width: 767px) {
+          width: 100%;
+          margin-bottom: 2rem;
+          padding: 1rem;
+
+          h3 {
+            font-size: 1.2rem !important;
+          }
+
+          p {
+            font-size: .9rem !important;
+          }
+        }
+
+        //&:first-of-type {
+        //  background-color: #D96A78;
+        //}
+        //
+        //&:nth-child(2) {
+        //  background-color: #3598FE;
+        //}
+        //
+        //&:last-of-type {
+        //  background-color: #37376B;
+        //}
       }
 
-      h2 {
-        font-size: 1.2rem;
+      h3 {
+        margin-top: 4rem;
         margin-bottom: 1rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #D96A78;
+        text-transform: uppercase;
       }
 
       p {
-        font-size: .9rem;
-        height: 130px;
-        overflow: hidden;
+        margin-bottom: 0;
+        font-size: 1.2rem;
+        line-height: 2rem;
       }
     }
-  }
-}
-
-
-@media (max-width: 768px) {
-  .about-mission, .about-vision {
-    width: 100%;
-    padding-right: 0;
-    padding-left: 0;
   }
 }

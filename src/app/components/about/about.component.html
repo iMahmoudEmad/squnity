@@ -1,48 +1,50 @@
-<section class="about mt-80">
+<app-header-section [title]="'Customizable SDK Supporting Multiple Platforms to Build Better Apps'"
+                    [backgroundImage]="'./../../../assets/img/header-background.png'">
+</app-header-section>
+<section class="about">
   <div class="container">
-    <!--    <div class="about-header">-->
-    <!--      <h2 class="text-center">About squnity</h2>-->
-    <!--    </div>-->
     <div class="row">
-      <div class="content">
-        <h2>out story</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, culpa, doloribus eius eligendi ex
-          illo ipsam ipsum iure iusto quibusdam ratione soluta. Ad ipsam laborum laudantium magnam nisi. Eveniet,
-          sapiente. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias assumenda minima optio velit
-          voluptas. Cupiditate dolor modi molestias nisi nobis obcaecati sequi temporibus voluptatem voluptates?
-          Distinctio error eum qui. Vitae.</p>
-      </div>
-    </div>
-    <div class="row justify-content-between align-items-center">
-      <div class="about-mission">
+      <div class="who-we-are d-flex justify-content-center align-items-center">
         <div class="content">
-          <h2>Our mission</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eum velit vero! Ab at dolorum inventore magni
-            maxime neque nisi reprehenderit, tenetur? Alias at debitis distinctio nesciunt, quibusdam repellendus
-            similique?</p>
-        </div>
-      </div>
-      <div class="about-vision">
-        <div class="content">
-          <h2>Our Vision</h2>
+          <h3>Who we are ?</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et eum velit vero! Ab at dolorum inventore magni
-            maxime neque nisi reprehenderit, tenetur? Alias at debitis distinctio nesciunt, quibusdam repellendus
-            similique?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias assumenda beatae eius eum fugiat hic iste
+            laboriosam molestiae, natus neque praesentium, quasi saepe tempora, veritatis voluptatem? Necessitatibus
+            nulla
+            quidem tenetur! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad corporis ea esse
+            numquam quaerat quo recusandae vero voluptas. Ab aut, consequatur deserunt ducimus eaque excepturi inventore
+            molestias porro temporibus?
           </p>
-        </div>
-      </div> <!-- .content -->
-    </div> <!-- .row -->
-    <div class="row">
-      <div class="content">
-        <h2 class="clients-title">our clients</h2>
-        <owl-carousel [options]="owlConfig"
-                      [carouselClasses]="['owl-theme', 'sliding']">
-          <div class="item" *ngFor="let item of [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18];let i = index">
-            <img [src]="'./assets/img/' + slider.image" [alt]="slider.title">
-          </div> <!-- .item -->
-        </owl-carousel>
-      </div> <!-- .content -->
+        </div> <!-- .content -->
+        <img src="./../../../assets/img/header.png" alt="">
+      </div> <!-- .who-we-are -->
     </div> <!-- .row -->
   </div> <!-- .container -->
+
+  <section class="make-us-special w-100">
+    <h2 class="title">what makes us special?</h2>
+    <div class="container">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-md-6" *ngFor="let item of special">
+          <div class="content d-flex justify-content-between align-items-center">
+            <img [src]="'./../../../assets/img/about/' + item.picture" [alt]="item.title" title="item.title">
+            <div class="content-data">
+              <h4>{{item.title}}</h4>
+              <p>{{item.description}}</p>
+            </div> <!-- .content-data -->
+          </div> <!-- .content -->
+        </div> <!-- .col-md-6 -->
+      </div> <!-- .row -->
+    </div> <!-- .container -->
+  </section> <!-- .make-us-special -->
+
+  <section class="what-you-got">
+    <h2 class="title">What you got</h2>
+    <div class="content d-flex justify-content-center align-items-center flex-wrap text-center">
+      <div class="content-data" *ngFor="let service of services; let i = index">
+        <h3>{{i+1}}. {{service.title}}</h3>
+        <p>{{service.description}}</p>
+      </div>
+    </div> <!-- .content -->
+  </section> <!-- .what-you-got -->
 </section>
