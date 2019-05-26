@@ -6,7 +6,6 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {NavbarComponent} from './components/navbar/navbar.component';
 import {FooterComponent} from './components/footer/footer.component';
-import {NotFoundComponent} from './components/not-found/not-found.component';
 import {SharedModule} from './components/shared.module';
 
 @NgModule({
@@ -14,7 +13,6 @@ import {SharedModule} from './components/shared.module';
     AppComponent,
     NavbarComponent,
     FooterComponent,
-    NotFoundComponent,
   ],
   imports: [
     BrowserModule,

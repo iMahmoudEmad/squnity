@@ -17,7 +17,7 @@ import {NewsLetterComponent} from './news-letter/news-letter.component';
   declarations: [
     HeaderSectionComponent,
     CompanyQouteComponent,
-    NewsLetterComponent,
+    NewsLetterComponent
   ]
 })
 

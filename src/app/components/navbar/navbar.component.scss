@@ -25,8 +25,20 @@
   &-nav {
     text-transform: capitalize;
 
-    .nav-item:last-of-type .nav-link {
-      padding-right: 0;
+    .nav-item {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+
+      &:last-of-type {
+        padding-top: .7rem;
+
+        .btn-default {
+          background-color: #D96A78;
+          text-align: center;
+          padding: .3rem 1rem;
+          box-shadow: none;
+        }
+      }
     }
 
     .nav-link {
