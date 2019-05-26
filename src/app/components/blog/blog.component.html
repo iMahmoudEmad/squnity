@@ -1,3 +1,21 @@
-<p>
-  blog works!
-</p>
+<app-header-section [title]="'Blog Header'"
+                    [backgroundImage]="'./assets/img/header-background.png'"></app-header-section>
+
+<section class="blog">
+  <div class="container">
+    <h2 class="title">Most Popular</h2>
+    <hr>
+    <div class="row">
+      <div class="col-md-4 col-sm-6 col-xs-12" *ngFor="let article of articles">
+        <div class="content text-center">
+          <a [routerLink]="article.id">
+            <img [src]="'./assets/img/blog/' + article.id + '.jpg'" [alt]="article.title" [title]="article.title">
+          </a>
+          <h2>
+            <a [routerLink]="article.id">{{article.title}}</a>
+          </h2>
+        </div> <!-- .content -->
+      </div> <!-- .col-md-4 -->
+    </div> <!-- .row -->
+  </div> <!-- .container -->
+</section>

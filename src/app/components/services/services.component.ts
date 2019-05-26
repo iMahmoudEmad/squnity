@@ -8,55 +8,47 @@ import {Component, OnInit} from '@angular/core';
 export class ServicesComponent implements OnInit {
   services = [
     {
-      icon: 'fas fa-network-wired',
-      title: 'Service Name',
-      description: 'while most people enjoy casino gambiling, sports betting lottery and bingo playing.'
+      id: '',
+      image: '',
+      name: 'Service Name',
+      description: 'while most people enjoy casino gambiling, sports betting lottery and bingo playing while most people enjoy casino gambiling, sports betting lottery and bingo playing while most people enjoy casino gambiling, sports betting lottery and bingo playing.',
+      link: ''
     },
     {
-      icon: 'fas fa-shield-alt',
-      title: 'Service Name',
-      description: 'while most people enjoy casino gambiling, sports betting lottery and bingo playing.'
+      id: '',
+      image: '',
+      name: 'Service Name',
+      description: 'while most people enjoy casino gambiling, sports betting lottery and bingo playing while most people enjoy casino gambiling, sports betting lottery and bingo playing while most people enjoy casino gambiling, sports betting lottery and bingo playing.',
+      link: ''
     },
     {
-      icon: 'fas fa-mask',
-      title: 'Service Name',
-      description: 'while most people enjoy casino gambiling, sports betting lottery and bingo playing.'
+      id: '',
+      image: '',
+      name: 'Service Name',
+      description: 'while most people enjoy casino gambiling, sports betting lottery and bingo playing while most people enjoy casino gambiling, sports betting lottery and bingo playing while most people enjoy casino gambiling, sports betting lottery and bingo playing.',
+      link: ''
     },
     {
-      icon: 'fas fa-bug',
-      title: 'Service Name',
-      description: 'while most people enjoy casino gambiling, sports betting lottery and bingo playing.'
+      id: '',
+      image: '',
+      name: 'Service Name',
+      description: 'while most people enjoy casino gambiling, sports betting lottery and bingo playing while most people enjoy casino gambiling, sports betting lottery and bingo playing while most people enjoy casino gambiling, sports betting lottery and bingo playing.',
+      link: ''
     },
     {
-      icon: 'fas fa-bug',
-      title: 'Service Name',
-      description: 'while most people enjoy casino gambiling, sports betting lottery and bingo playing.'
+      id: '',
+      image: '',
+      name: 'Service Name',
+      description: 'while most people enjoy casino gambiling, sports betting lottery and bingo playing while most people enjoy casino gambiling, sports betting lottery and bingo playing while most people enjoy casino gambiling, sports betting lottery and bingo playing.',
+      link: ''
     },
     {
-      icon: 'fas fa-bug',
-      title: 'Service Name',
-      description: 'while most people enjoy casino gambiling, sports betting lottery and bingo playing.'
-    },
-    {
-      icon: 'fas fa-bug',
-      title: 'Service Name',
-      description: 'while most people enjoy casino gambiling, sports betting lottery and bingo playing.'
-    },
-    {
-      icon: 'fas fa-bug',
-      title: 'Service Name',
-      description: 'while most people enjoy casino gambiling, sports betting lottery and bingo playing.'
-    },
-    {
-      icon: 'fas fa-bug',
-      title: 'Service Name',
-      description: 'while most people enjoy casino gambiling, sports betting lottery and bingo playing.'
-    },
-    {
-      icon: 'fas fa-bug',
-      title: 'Service Name',
-      description: 'while most people enjoy casino gambiling, sports betting lottery and bingo playing.'
-    },
+      id: '',
+      image: '',
+      name: 'Service Name',
+      description: 'while most people enjoy casino gambiling, sports betting lottery and bingo playing while most people enjoy casino gambiling, sports betting lottery and bingo playing while most people enjoy casino gambiling, sports betting lottery and bingo playing.',
+      link: ''
+    }
   ];
 
   constructor() {

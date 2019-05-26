@@ -9,47 +9,47 @@ export class HallOfFameComponent implements OnInit {
   companies = [
     {
       name: 'Gitlab',
-      link: './../../../../assets/img/client.jpg'
+      link: './assets/img/client.jpg'
     },
     {
       name: 'Gitlab',
-      link: './../../../../assets/img/client.jpg'
+      link: './assets/img/client.jpg'
     },
     {
       name: 'Gitlab',
-      link: './../../../../assets/img/client.jpg'
+      link: './assets/img/client.jpg'
     },
     {
       name: 'Gitlab',
-      link: './../../../../assets/img/client.jpg'
+      link: './assets/img/client.jpg'
     },
     {
       name: 'Gitlab',
-      link: './../../../../assets/img/client.jpg'
+      link: './assets/img/client.jpg'
     },
     {
       name: 'Gitlab',
-      link: './../../../../assets/img/client.jpg'
+      link: './assets/img/client.jpg'
     },
     {
       name: 'Gitlab',
-      link: './../../../../assets/img/client.jpg'
+      link: './assets/img/client.jpg'
     },
     {
       name: 'Gitlab',
-      link: './../../../../assets/img/client.jpg'
+      link: './assets/img/client.jpg'
     },
     {
       name: 'Gitlab',
-      link: './../../../../assets/img/client.jpg'
+      link: './assets/img/client.jpg'
     },
     {
       name: 'Gitlab',
-      link: './../../../../assets/img/client.jpg'
+      link: './assets/img/client.jpg'
     },
     {
       name: 'Gitlab',
-      link: './../../../../assets/img/client.jpg'
+      link: './assets/img/client.jpg'
     },
   ];
 

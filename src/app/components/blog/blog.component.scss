@@ -1,0 +1,43 @@
+.blog {
+  padding: 4rem 0;
+  position: relative;
+
+  .title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #fff;
+    display: inline-block;
+    width: 300px;
+    text-align: center;
+    top: 4rem;
+  }
+
+  hr {
+    padding: 15px;
+    margin-bottom: 2rem;
+  }
+
+  .content {
+    margin-bottom: 3rem;
+
+    img {
+      width: 100%;
+      height: 250px;
+      margin-bottom: 1rem;
+    }
+
+    h2 a {
+      font-size: 1.2rem;
+      font-weight: 700;
+      line-height: 1.7rem;
+      text-decoration: none;
+      letter-spacing: 1px;
+      color: #343a40;
+    }
+  }
+}
