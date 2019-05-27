@@ -6,16 +6,105 @@
     <h2 class="title">Most Popular</h2>
     <hr>
     <div class="row">
-      <div class="col-md-4 col-sm-6 col-xs-12" *ngFor="let article of articles">
-        <div class="content text-center">
-          <a [routerLink]="article.id">
-            <img [src]="'./assets/img/blog/' + article.id + '.jpg'" [alt]="article.title" [title]="article.title">
+      <!--      <div class="col-md-4 col-sm-6 col-xs-12" *ngFor="let article of articles">-->
+      <!--        <div class="content text-center">-->
+      <!--          <a [routerLink]="article.id">-->
+      <!--            <img [src]="'./assets/img/blog/' + article.id + '.jpg'" [alt]="article.title" [title]="article.title">-->
+      <!--          </a>-->
+      <!--          <h2>-->
+      <!--            <a [routerLink]="article.id">{{article.title}}</a>-->
+      <!--          </h2>-->
+      <!--        </div> &lt;!&ndash; .content &ndash;&gt;-->
+      <!--      </div> &lt;!&ndash; .col-md-4 &ndash;&gt;-->
+
+      <div class="col-md-12">
+        <a [routerLink]="'/blog/1'" [title]="'Blog Title'" class="blog-item"
+           [ngStyle]="{'background-image': 'url(./assets/img/blog/1.jpg)'}">
+          <div class="blog-item-content">
+            <h2>Title here</h2>
+            <div>
+              <img src="./assets/img/client.jpg" alt="">
+              <h3>Person Name</h3>
+              <span>April 31, 2019</span>
+            </div> <!-- div -->
+          </div> <!-- .blog-item-content -->
+        </a>
+      </div> <!-- .col-md-12 -->
+
+      <div class="blog-section w-100 d-flex justify-content-center align-items-center flex-wrap">
+        <div class="col-md-6" *ngFor="let item of [1, 2, 3, 4]">
+          <a [routerLink]="'/blog/1'" [title]="'Blog Title'" class="blog-item"
+             [ngStyle]="{'background-image': 'url(./assets/img/blog/2.jpg)'}">
+            <div class="blog-item-content">
+              <h2>Title here</h2>
+              <div>
+                <img src="./assets/img/client.jpg" alt="">
+                <h3>Person Name</h3>
+                <span>April 31, 2019</span>
+              </div> <!-- div -->
+            </div> <!-- .blog-item-content -->
           </a>
-          <h2>
-            <a [routerLink]="article.id">{{article.title}}</a>
-          </h2>
-        </div> <!-- .content -->
-      </div> <!-- .col-md-4 -->
+        </div> <!-- .col-md-6 -->
+<!--        <div class="col-md-6 d-flex justify-content-center align-items-start flex-wrap">-->
+<!--          <a [routerLink]="'/blog/1'" [title]="'Blog Title'" class="blog-item blog-item-sm"-->
+<!--             *ngFor="let item of [1, 2, 3, 4]"-->
+<!--             [ngStyle]="{'background-image': 'url(./assets/img/blog/2.jpg)'}">-->
+<!--            <div class="blog-item-content">-->
+<!--              <h2>Title here</h2>-->
+<!--              <div>-->
+<!--                <img src="./assets/img/client.jpg" alt="">-->
+<!--                <h3>Person Name</h3>-->
+<!--                <span>April 31, 2019</span>-->
+<!--              </div> &lt;!&ndash; div &ndash;&gt;-->
+<!--            </div> &lt;!&ndash; .blog-item-content &ndash;&gt;-->
+<!--          </a>-->
+<!--        </div> &lt;!&ndash; .col-md-6 &ndash;&gt;-->
+      </div> <!-- .blog-section -->
+
+      <div class="col-md-12">
+        <a [routerLink]="'/blog/1'" [title]="'Blog Title'" class="blog-item"
+           [ngStyle]="{'background-image': 'url(./assets/img/blog/1.jpg)'}">
+          <div class="blog-item-content">
+            <h2>Title here</h2>
+            <div>
+              <img src="./assets/img/client.jpg" alt="">
+              <h3>Person Name</h3>
+              <span>April 31, 2019</span>
+            </div> <!-- div -->
+          </div> <!-- .blog-item-content -->
+        </a>
+      </div> <!-- .col-md-12 -->
+
+      <div class="blog-section w-100 d-flex justify-content-center align-items-center flex-wrap">
+        <div class="col-md-6" *ngFor="let item of [1, 2, 3, 4]">
+          <a [routerLink]="'/blog/1'" [title]="'Blog Title'" class="blog-item"
+             [ngStyle]="{'background-image': 'url(./assets/img/blog/2.jpg)'}">
+            <div class="blog-item-content">
+              <h2>Title here</h2>
+              <div>
+                <img src="./assets/img/client.jpg" alt="">
+                <h3>Person Name</h3>
+                <span>April 31, 2019</span>
+              </div> <!-- div -->
+            </div> <!-- .blog-item-content -->
+          </a>
+        </div> <!-- .col-md-6 -->
+        <!--        <div class="col-md-6 d-flex justify-content-center align-items-start flex-wrap">-->
+        <!--          <a [routerLink]="'/blog/1'" [title]="'Blog Title'" class="blog-item blog-item-sm"-->
+        <!--             *ngFor="let item of [1, 2, 3, 4]"-->
+        <!--             [ngStyle]="{'background-image': 'url(./assets/img/blog/2.jpg)'}">-->
+        <!--            <div class="blog-item-content">-->
+        <!--              <h2>Title here</h2>-->
+        <!--              <div>-->
+        <!--                <img src="./assets/img/client.jpg" alt="">-->
+        <!--                <h3>Person Name</h3>-->
+        <!--                <span>April 31, 2019</span>-->
+        <!--              </div> &lt;!&ndash; div &ndash;&gt;-->
+        <!--            </div> &lt;!&ndash; .blog-item-content &ndash;&gt;-->
+        <!--          </a>-->
+        <!--        </div> &lt;!&ndash; .col-md-6 &ndash;&gt;-->
+      </div> <!-- .blog-section -->
+
     </div> <!-- .row -->
   </div> <!-- .container -->
 </section>
