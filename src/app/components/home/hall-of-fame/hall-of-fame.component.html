@@ -1,7 +1,8 @@
-<section class="hall-of-fame">
+<section class="hall-of-fame gray">
   <div class="container">
     <div class="row">
-      <h2 class="text-center w-100 title">Hall of fame</h2>
+      <h2 class="text-center section-title gray">Hall of fame</h2>
+      <hr class="w-100">
       <ul class="list-unstyled d-flex justify-content-center align-items-center flex-wrap">
         <li *ngFor="let compony of companies">
           <img [src]="compony.link" [alt]="compony.name" [title]="compony.name">

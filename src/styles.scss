@@ -65,3 +65,36 @@ button.owl-prev {
   outline: none;
   border-radius: 0;
 }
+
+section {
+  padding: 4rem 0;
+  position: relative;
+}
+
+h2.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #fff;
+  display: inline-block;
+  width: 350px;
+  text-align: center;
+  top: 4rem;
+
+  @media(max-width: 767px) {
+    width: 100%;
+  }
+}
+
+.gray {
+  background-color: #FBFBFB !important;
+}
+
+hr {
+  padding: 15px;
+  margin-bottom: 2rem;
+}
