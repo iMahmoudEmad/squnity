@@ -1,11 +1,16 @@
 .login {
   padding: 4rem 0;
+  background-image: url("./../../../assets/img/header-background.png");
+  background-size: cover;
+  height: 100vh;
+
+  .row {
+    height: 100%;
+  }
 
   &-content {
     width: 500px;
-    margin: auto;
-    //border: 1px solid #3598FE;
-    background-color: #3598FE;
+    background-color: #fff;
     border-radius: .25rem;
     color: #fff;
 
@@ -21,8 +26,16 @@
         text-transform: capitalize;
       }
 
+      label, input, input::placeholder {
+        color: #D96A78;
+      }
+
       label {
         font-size: 1rem;
+      }
+
+      input {
+        box-shadow: none;
       }
 
       button {

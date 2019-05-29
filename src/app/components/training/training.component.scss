@@ -1,26 +1,4 @@
 .training {
-
-  .title {
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: capitalize;
-    margin-bottom: 2rem;
-  }
-
-  .content {
-    width: 50%;
-    padding: 2rem;
-    box-shadow: 0 0 16px rgba(#000, .08);
-    border-radius: 2rem;
-
-    p {
-      font-size: 1rem;
-      line-height: 2rem;
-      margin-bottom: 0;
-    }
-  }
-
   &-header {
     background-image: linear-gradient(to right, #3BD8A6, #3BD8A6 - 20%);
     padding: 5rem 0;
