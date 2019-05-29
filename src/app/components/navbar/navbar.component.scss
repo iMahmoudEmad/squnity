@@ -59,3 +59,37 @@
     }
   }
 }
+
+@media(max-width: 767px) {
+  .navbar {
+    padding: 0;
+
+    &-toggler {
+      //border: 1px solid #D96A78;
+      margin: 1rem;
+      padding: 1rem;
+    }
+
+    &-brand,
+    &-collapse {
+      padding: 1rem;
+    }
+
+    &-collapse {
+      background-color: #fff;
+
+      .nav-item {
+        padding-top: 0;
+        padding-bottom: 0;
+
+        &:last-of-type .nav-link {
+          color: #fff;
+        }
+
+        .nav-link {
+          color: #D96A78;
+        }
+      }
+    }
+  }
+}
