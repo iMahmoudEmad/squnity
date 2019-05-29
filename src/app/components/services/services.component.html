@@ -1,49 +1,66 @@
 <app-header-section [title]="'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto'"
                     [backgroundImage]="'./assets/img/header-background.png'"></app-header-section>
 <section class="services">
-  <div class="whats-squnity">
-    <div class="container">
-      <div class="row justify-content-center align-items-center">
-        <div class="col-md-6">
-          <h2>What is Squnity?</h2>
+  <div class="container">
+    <div class="row justify-content-center align-items-center">
+      <div class="services-header text-center">
+        <h2>our nice services</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur eius expedita explicabo, facilis
+          fugiat harum nesciunt nobis nulla, obcaecati perferendis perspiciatis quibusdam repellat sunt tempora totam,
+          velit vitae voluptas voluptatem.
+        </p>
+      </div> <!-- .services-header -->
+    </div> <!-- .row -->
+  </div> <!-- .container -->
+  <div class="d-flex w-100 flex-wrap justify-content-center align-items-center">
+    <div class="services-items" *ngFor="let service of [1, 2, 3, 4, 5, 6, 7, 8]"
+         [ngStyle]="{'background-image': 'url(./assets/img/about-one.jpg)'}">
+      <a [routerLink]="'1'">
+        <div class="content">
+          <h2>Service Title</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic laborum quia repellat. Adipisci atque
+            ducimus,
+            eius facere hic laudantium minima modi neque, non odio officiis praesentium quam ratione, suscipit
+            voluptates!</p>
+        </div> <!-- .content -->
+      </a>
+    </div> <!-- .services-items -->
+  </div> <!-- .d-flex -->
+  <div class="container">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-md-3" *ngFor="let item of [1, 2, 3, 4]">
+        <div class="services-list text-center">
+          <div class="service-list-icon">
+            <i class="fa fa-user"></i>
+          </div>
+          <h2>Service Title</h2>
           <p>
-            Dropbox is a home for all of your work. With the added benefits of cloud storage, you can store and share
-            files, collaborate on projects and bring your best ideas to life – whether you're working alone or as part
-            of a team.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dignissimos ea, facilis iste laudantium
+            praesentium reprehenderit sint totam voluptate. Ad autem corporis deleniti est maiores nemo nihil, nisi
+            quibusdam vitae!
           </p>
+        </div> <!-- .services-list -->
+      </div> <!-- .col-md-3 -->
+    </div> <!-- .row -->
+  </div> <!-- .container -->
+
+  <div class="service-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Service Title</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid, animi blanditiis explicabo
+            harum maxime minima molestias optio porro qui. Doloremque dolores eum illo iste obcaecati, quaerat veniam
+            veritatis vero?
+          </p>
+          <button class="btn btn-default">read more</button>
         </div> <!-- .col-md-6 -->
         <div class="col-md-6">
-          <img src="./assets/img/services/5.png" alt="">
+          <img src="./assets/img/header-background.png" alt="" title="">
         </div> <!-- .col-md-6 -->
       </div> <!-- .row -->
     </div> <!-- .container -->
-  </div> <!-- .whats-squnity -->
-
-  <div class="service-item">
-    <div class="container">
-      <div class="row" *ngFor="let service of services; let i = index; let odd = odd; let even = even">
-        <div class="service-content w-100 d-flex justify-content-center align-items-center" *ngIf="odd">
-          <div class="col-md-6">
-            <img [src]="'./assets/img/services/' + (i + 1) + '.png'" alt="service.name" [title]="service.name">
-          </div> <!-- .col-md-6 -->
-          <div class="col-md-6">
-            <h2>{{service.name}}</h2>
-            <p>{{service.description}}</p>
-            <button class="btn btn-default">read more</button>
-          </div> <!-- .col-md-6 -->
-        </div> <!-- .service-content -->
-
-        <div class="service-content w-100 d-flex justify-content-center align-items-center" *ngIf="even">
-          <div class="col-md-6">
-            <h2>{{service.name}}</h2>
-            <p>{{service.description}}</p>
-            <button class="btn btn-default">read more</button>
-          </div> <!-- .col-md-6 -->
-          <div class="col-md-6">
-            <img [src]="'./assets/img/services/' + (i + 1) + '.png'" alt="service.name" [title]="service.name">
-          </div> <!-- .col-md-6 -->
-        </div> <!-- .service-content -->
-      </div> <!-- .row -->
-    </div> <!-- .container -->
-  </div> <!-- .service-item -->
+  </div> <!-- .service-section -->
 </section>
