@@ -1,6 +1,5 @@
 <app-header-section [title]="'contact squnity'"
                     [backgroundImage]="'./assets/img/header-background.png'"></app-header-section>
-
 <section class="contact mt-80">
   <div class="container">
     <div class="row">
@@ -23,9 +22,9 @@
               </div> <!-- .form-group -->
               <div class="form-group d-flex justify-content-center align-items-center">
                 <button class="btn btn-default" type="submit">Submit</button>
-              </div>
+              </div> <!-- .form-group -->
             </form>
-          </div>
+          </div> <!-- .col-md-6 -->
           <div class="col-md-6 col-sm-12">
             <div class="get-in-touch">
               <h2>Get in touch</h2>
@@ -35,10 +34,14 @@
                   <span>{{info.data}}</span>
                 </li>
               </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+            </div> <!-- .get-in-touch -->
+          </div> <!-- .col-md-6 -->
+        </div> <!-- .row -->
+      </div> <!-- .content -->
+    </div> <!-- .row -->
+  </div> <!-- .container -->
 </section>
+
+<agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
+  <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+</agm-map>

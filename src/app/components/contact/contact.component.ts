@@ -6,6 +6,12 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
+  // google maps zoom level
+  zoom = 12;
+
+  // initial center position for the map
+  lat = 51.673858;
+  lng = 7.815982;
   informations = [
     {
       icon: 'map-marker-alt',
