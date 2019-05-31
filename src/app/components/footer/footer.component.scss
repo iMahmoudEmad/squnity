@@ -1,7 +1,5 @@
 footer {
-  //background-color: #26264C;
   background-color: #343a40;
-  //color: #fff;
   border-top: 1px solid rgba(#343a40, .1);
   text-transform: capitalize;
   padding: 1rem 0 0;
@@ -55,7 +53,6 @@ footer {
 
       a {
         font-size: inherit;
-        //color: #343a40;
         color: #fff;
         text-decoration: none;
 
@@ -84,11 +81,11 @@ footer {
   }
 
   .copyright {
-    //width: 100%;
     padding: 2rem 0;
     margin-top: 2rem;
     border-top: 1px solid rgba(#fbfbfb, .5);
-    color: #fff;
+    color: #000;
+    background: #fff;
 
     p {
       margin-bottom: 0;

@@ -1,0 +1,36 @@
+<app-header-section [title]="'Service Title'"
+                    [backgroundImage]="'./assets/img/header-background.png'"></app-header-section>
+
+<section class="service">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2 class="title">Title Here</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, dolorum facere itaque labore laborum
+          libero necessitatibus quaerat saepe temporibus? Accusantium blanditiis cumque ducimus porro veniam. Commodi
+          dolor expedita omnis voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, ad
+          blanditiis, distinctio id ipsa itaque magnam quasi reiciendis sed sequi soluta suscipit unde veritatis.
+          Delectus hic nostrum recusandae rem ut? Lorem ipsum dolor sit amet, consectetur
+        </p>
+      </div> <!-- .col-md-6 -->
+      <div class="col-md-6">
+        <img src="./assets/img/header-background.png" alt="">
+      </div> <!-- .col-md-6 -->
+    </div> <!-- .row -->
+  </div> <!-- .container -->
+  <div class="service-section gray d-flex justify-content-center align-items-center flex-wrap">
+    <div class="container">
+      <div class="row">
+        <h2 class="text-center section-title gray">Title Here</h2>
+        <hr>
+        <div class="col-md-6" *ngFor="let item of [1, 2, 3, 4, 5, 6]">
+          <div class="content">
+            <img src="./assets/img/about/brain.png" alt="">
+            <p>Lorem ipsum dolor sit amet</p>
+          </div> <!-- .content -->
+        </div> <!-- .col-md-6 -->
+      </div> <!-- .row -->
+    </div> <!-- .container -->
+  </div> <!-- .service-section -->
+</section>

@@ -15,6 +15,10 @@ const routes: Routes = [
     loadChildren: './components/services/services.module#ServiceModule'
   },
   {
+    path: 'services/:id',
+    loadChildren: './components/services/service/service.module#ServiceModule'
+  },
+  {
     path: 'training',
     loadChildren: './components/training/training.module#TrainingModule'
   },
