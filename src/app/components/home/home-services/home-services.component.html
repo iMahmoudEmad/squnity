@@ -17,11 +17,13 @@
       <div class="services-list row">
         <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" *ngFor="let service of services">
           <div class="content">
-            <i [class]="service.icon"></i>
+<!--            <i [class]="service.icon"></i>-->
+            <img [src]="service.image" [alt]="service.title">
             <h4>{{service.title}}</h4>
             <p>{{service.description}}</p>
           </div>
         </div>
+        <button class="btn btn-default" [routerLink]="'/services'">check our services</button>
       </div>
     </div>
   </div>

@@ -6,52 +6,14 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./hall-of-fame.component.scss']
 })
 export class HallOfFameComponent implements OnInit {
-  companies = [
-    {
-      name: 'Gitlab',
-      link: './assets/img/client.jpg'
-    },
-    {
-      name: 'Gitlab',
-      link: './assets/img/client.jpg'
-    },
-    {
-      name: 'Gitlab',
-      link: './assets/img/client.jpg'
-    },
-    {
-      name: 'Gitlab',
-      link: './assets/img/client.jpg'
-    },
-    {
-      name: 'Gitlab',
-      link: './assets/img/client.jpg'
-    },
-    {
-      name: 'Gitlab',
-      link: './assets/img/client.jpg'
-    },
-    {
-      name: 'Gitlab',
-      link: './assets/img/client.jpg'
-    },
-    {
-      name: 'Gitlab',
-      link: './assets/img/client.jpg'
-    },
-    {
-      name: 'Gitlab',
-      link: './assets/img/client.jpg'
-    },
-    {
-      name: 'Gitlab',
-      link: './assets/img/client.jpg'
-    },
-    {
-      name: 'Gitlab',
-      link: './assets/img/client.jpg'
-    },
-  ];
+  owlConfig = {
+    items: 5,
+    dots: false,
+    nav: true,
+    autoplay: true,
+    loop: true,
+    margin: 20
+  };
 
   constructor() {
   }

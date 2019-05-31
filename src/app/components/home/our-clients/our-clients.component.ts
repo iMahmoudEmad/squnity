@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-our-clients',
@@ -6,8 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./our-clients.component.scss']
 })
 export class OurClientsComponent implements OnInit {
+  owlConfig = {
+    items: 5,
+    dots: false,
+    nav: true,
+    autoplay: true,
+    loop: true,
+    margin: 20
+  };
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }

@@ -1,13 +1,14 @@
-<section class="hall-of-fame">
+<section class="hall-of-fame  gray">
   <div class="container">
-    <div class="row">
-      <h2 class="text-center section-title">Hall of fame</h2>
+    <div class="row d-block">
+      <h2 class="text-center section-title  gray">Hall of fame</h2>
       <hr>
-      <ul class="list-unstyled d-flex justify-content-center align-items-center flex-wrap">
-        <li *ngFor="let compony of companies">
-          <img [src]="compony.link" [alt]="compony.name" [title]="compony.name">
-        </li>
-      </ul>
+      <owl-carousel [options]="owlConfig"
+                    [carouselClasses]="['owl-theme', 'row', 'sliding']">
+        <div class="item" *ngFor="let client of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]">
+          <img src="./assets/img/header-background.png" alt="" title="">
+        </div>
+      </owl-carousel>
     </div>
   </div>
 </section>

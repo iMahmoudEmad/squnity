@@ -13,6 +13,7 @@ import {OurClientsComponent} from './our-clients/our-clients.component';
 import {ShortServicesComponent} from './short-services/short-services.component';
 import {HallOfFameComponent} from './hall-of-fame/hall-of-fame.component';
 import {WhyChooseSqunityComponent} from './why-choose-squnity/why-choose-squnity.component';
+import { OwlModule } from 'ngx-owl-carousel';
 
 const routes: Routes = [
   {path: '', component: HomeComponent}
@@ -22,7 +23,8 @@ const routes: Routes = [
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
-    SharedModule
+    SharedModule,
+    OwlModule
   ],
   declarations: [
     HomeComponent,

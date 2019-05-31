@@ -28,4 +28,19 @@
       }
     }
   }
+
+  .team-qualifications {
+    position: relative;
+    padding: 4rem 0;
+
+    .content {
+      padding: 4rem 0;
+
+    }
+
+    img {
+      height: 180px;
+      border-radius: 50%;
+    }
+  }
 }

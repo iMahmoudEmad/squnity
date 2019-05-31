@@ -6,6 +6,14 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./team.component.scss']
 })
 export class TeamComponent implements OnInit {
+  owlConfig = {
+    items: 5,
+    dots: false,
+    nav: true,
+    autoplay: true,
+    loop: true,
+    margin: 20
+  };
   members = [
     {
       picture: './assets/img/img.jpg',

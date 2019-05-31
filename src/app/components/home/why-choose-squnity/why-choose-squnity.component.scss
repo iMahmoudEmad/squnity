@@ -1,26 +1,53 @@
 .platforms {
   .content {
-    padding: 2rem 0 0;
+    padding: 2rem;
+    background-color: #fbfbfb;
+    //color: #fff;
+    width: 33.33%;
+    height: 400px;
+    margin-bottom: 2rem;
+
+    &:first-of-type {
+      border-top-left-radius: .5rem;
+      border-bottom-left-radius: .5rem;
+    }
+
+    &:last-of-type {
+      border-top-right-radius: .5rem;
+      border-bottom-right-radius: .5rem;
+    }
+
+    &.middle {
+      background-color: #D96A78;
+      color: #fff;
+      height: 500px;
+      border-radius: .5rem;
+    }
 
     @media(max-width: 767px) {
       display: block !important;
     }
 
     .platform {
-      padding: 3rem 2rem;
-      background-color: #FBFBFB;
-      margin-bottom: 2rem;
-
-      h4 {
-        font-size: 1rem;
-        font-weight: 700;
-        text-transform: capitalize;
-      }
+      text-align: center;
 
       img {
         width: 4rem;
         height: 4rem;
-        margin-right: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      h4 {
+        font-size: 1.2rem;
+        font-weight: 700;
+        text-transform: capitalize;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1rem;
+        line-height: 1.7rem;
+        margin-bottom: 0;
       }
     }
   }

@@ -25,9 +25,33 @@
   &-nav {
     text-transform: capitalize;
 
+    .dropdown-menu {
+      border: none;
+      padding: 0;
+
+      .dropdown-item {
+        transition: all .2s ease-in-out;
+        padding: .5rem 1rem;
+        background-color: #D96A78;
+        color: #fff;
+
+        &:hover {
+          padding-left: 2rem;
+          background-color: #fff;
+          color: #D96A78;
+        }
+
+        @media (max-width: 767px) {
+          background-color: #fff;
+          color: #D96A78;
+        }
+      }
+    }
+
     .nav-item {
       padding-top: 1rem;
       padding-bottom: 1rem;
+      cursor: pointer;
 
       &:last-of-type {
         padding-top: .7rem;
