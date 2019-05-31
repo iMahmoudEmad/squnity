@@ -1,51 +1,94 @@
 .training {
-  &-header {
-    background-image: linear-gradient(to right, #3BD8A6, #3BD8A6 - 20%);
-    padding: 5rem 0;
-    color: #fff;
+  .training-section {
     margin-bottom: 4rem;
 
-    h4, h5 {
-      text-transform: capitalize;
-    }
+    .content {
+      padding: 1rem;
+      text-align: center;
 
-    h4 {
-      font-size: 2.5rem;
-      font-weight: 700;
-      margin-bottom: .5rem;
-    }
-
-    h5 {
-      font-size: 2rem;
-      font-weight: 500;
-      margin-bottom: 1.5rem;
-    }
-
-    p {
-      font-size: 1.2rem;
-      line-height: 2rem;
-      margin-bottom: 2rem;
-    }
-
-    .btn-default {
-      background-color: #fff;
-      margin-right: 1rem;
-      padding: .5rem 2rem;
-      font-size: 1rem;
-      font-weight: 700;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      color: #26D5C1;
-      border-radius: 0;
-
-      &:last-of-type {
-        margin-right: 0;
+      img {
+        width: 100%;
+        height: 250px;
+        margin-bottom: 2rem;
       }
     }
+  }
+
+  .training-agenda {
+    position: relative;
+    padding: 4rem 0;
+
+    .agenda-content {
+      margin: auto;
+
+      .content {
+        padding: 2rem 0;
+
+        span {
+          width: 120px;
+          margin-top: 5px;
+        }
+
+        &-description {
+          h2 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+          }
+
+          ul {
+            padding-left: 1rem;
+          }
+        }
+
+      }
+
+      button.btn-default {
+        display: flex;
+        margin: 2rem auto auto;
+        background-color: #D96A78;
+        color: #fff;
+        text-transform: capitalize;
+        font-size: 1.2rem;
+        box-shadow: none;
+        padding: .5rem 3rem;
+        border-radius: 0;
+      }
+    }
+  }
+
+  .about-author {
+    position: relative;
+    padding: 4rem 0;
 
     img {
-      width: auto;
-      height: 200px;
+      width: 100%;
+      height: 250px;
+      margin-bottom: 2rem;
+      border-radius: 50%;
+    }
+
+    .author-data {
+      //padding: 2rem;
+      padding-left: 2rem;
+
+      h2 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 0;
+        text-transform: capitalize;
+      }
+
+      span {
+        font-size: .9rem;
+        margin-bottom: 1rem;
+        display: block;
+      }
+
+      p {
+        font-size: 1rem;
+        line-height: 1.7rem;
+      }
     }
   }
 }

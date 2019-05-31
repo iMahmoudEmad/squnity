@@ -3,20 +3,68 @@
 <section class="training">
   <div class="container">
     <div class="row justify-content-center align-items-center">
-      <div class="training-header">
-        <div class="col-md-6">
-          <h4>build your career on</h4>
-          <h5>SqLabs</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, cupiditate dolore</p>
-          <div>
-            <button class="btn btn-default">Get start</button>
-            <button class="btn btn-default">Get start</button>
-          </div> <!-- div -->
-        </div><!-- .col-md-6 -->
-        <div class="col-md-6 d-flex justify-content-center align-items-center">
-          <img src="./../../../assets/img/ceh.png" alt="CEH Training">
-        </div><!-- .col-md-6 -->
-      </div> <!-- .training-header -->
+      <h2 class="section-title">training title</h2>
+      <hr>
+      <div class="training-section d-flex flex-wrap justify-content-center align-items-center">
+        <div class="col-md-4" *ngFor="let item of [1, 2, 3]">
+          <div class="content">
+            <img src="./assets/img/header-background.png" alt="">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad adipisci at blanditiis deleniti,
+              dolore doloribus et impedit itaque magnam molestiae nam odio pariatur provident quaerat quidem sapiente
+              temporibus voluptatibus?
+            </p>
+          </div> <!-- .content -->
+        </div> <!-- .col-md-4 -->
+      </div> <!-- .training-section -->
     </div> <!-- .row -->
   </div> <!-- .container -->
+  <div class="training-agenda gray">
+    <div class="container">
+      <div class="row">
+        <h2 class="section-title gray">agenda</h2>
+        <hr>
+        <div class="agenda-content">
+          <div class="content d-flex justify-content-center flex-wrap" *ngFor="let item of [1, 2, 3, 4]">
+            <span>10:00 - 11:00</span>
+            <div class="content-description">
+              <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+              <ul>
+                <li *ngFor="let item of [1, 2, 3]">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </li>
+              </ul>
+            </div> <!--.content-description -->
+          </div> <!-- .content -->
+          <button class="btn btn-default">Buy now</button>
+        </div> <!-- .agenda-content -->
+      </div> <!-- .row -->
+    </div> <!-- .container -->
+  </div> <!-- .training-agenda -->
+  <div class="about-author">
+    <div class="container">
+      <div class="row">
+        <h2 class="section-title">author data</h2>
+        <hr>
+        <div class="author-content d-flex justify-content-center align-items-center flex-wrap">
+          <div class="col-md-3">
+            <img src="./assets/img/header-background.png" alt="">
+          </div> <!-- .col-md-3 -->
+          <div class="col-md-9">
+            <div class="author-data">
+              <h2>Author Name</h2>
+              <span>Front-end engineer</span>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam consequuntur corporis debitis
+                dignissimos
+                dolor dolores ducimus, ex fugiat inventore itaque laboriosam libero nemo provident quae sapiente
+                suscipit
+                veritatis. Illum, quos.
+              </p>
+            </div> <!-- .author-data -->
+          </div> <!-- .col-md-9 -->
+        </div> <!-- .author-content -->
+      </div> <!-- .row -->
+    </div> <!-- .container -->
+  </div> <!-- .about-author -->
 </section>
