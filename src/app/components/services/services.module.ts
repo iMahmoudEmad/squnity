@@ -4,6 +4,7 @@ import {CommonModule} from '@angular/common';
 import {Routes, RouterModule} from '@angular/router';
 import {SharedModule} from '../shared.module';
 import {ServicesComponent} from './services.component';
+import { GetInTouchComponent } from './get-in-touch/get-in-touch.component';
 
 const routes: Routes = [
   {path: '', component: ServicesComponent}
@@ -16,7 +17,8 @@ const routes: Routes = [
     SharedModule
   ],
   declarations: [
-    ServicesComponent
+    ServicesComponent,
+    GetInTouchComponent
   ]
 })
 

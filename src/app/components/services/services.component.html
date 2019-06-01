@@ -3,64 +3,84 @@
 <section class="services">
   <div class="container">
     <div class="row justify-content-center align-items-center">
-      <div class="services-header text-center">
-        <h2>our nice services</h2>
+      <div class="col-md-6">
+        <h2 class="title">Is Your Organization Secure?</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur eius expedita explicabo, facilis
-          fugiat harum nesciunt nobis nulla, obcaecati perferendis perspiciatis quibusdam repellat sunt tempora totam,
-          velit vitae voluptas voluptatem.
+          Before you jump in and answer this question, take a moment to think about the last data breach you heard about
+          and how big was the company affected. Well, It is time to realize that we live in an era where
+          targeted-cybersecurity attacks are inevitable and the more your business grows, the bigger the attack surface
+          becomes and the more likely you would be on the list of more experienced hackers with more sophisticated
+          attacks.
+          So the question now, is not "CAN we be hacked?" but rather be"What can we do about it?". You should always be
+          prepared for the next attack by hardening your infrastructure security with in-depth defence mechanisms,
+          raising the awareness of your employees and discovering security issues within your organization before an
+          attacker does and this is where RedForce comes to help.
         </p>
-      </div> <!-- .services-header -->
+      </div> <!-- .col-md-6 -->
+      <div class="col-md-6">
+        <img src="./assets/img/header-background.png" alt="" title="">
+      </div> <!-- .col-md-6 -->
     </div> <!-- .row -->
   </div> <!-- .container -->
-  <div class="d-flex w-100 flex-wrap justify-content-center align-items-center">
-    <div class="services-items" *ngFor="let service of [1, 2, 3, 4, 5, 6, 7, 8]"
-         [ngStyle]="{'background-image': 'url(./assets/img/about-one.jpg)'}">
-      <a [routerLink]="'1'">
-        <div class="content">
-          <h2>Service Title</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic laborum quia repellat. Adipisci atque
-            ducimus,
-            eius facere hic laudantium minima modi neque, non odio officiis praesentium quam ratione, suscipit
-            voluptates!</p>
-        </div> <!-- .content -->
-      </a>
-    </div> <!-- .services-items -->
-  </div> <!-- .d-flex -->
-  <div class="container">
-    <div class="row justify-content-center align-items-center">
-      <div class="col-md-3" *ngFor="let item of [1, 2, 3, 4]">
-        <div class="services-list text-center">
-          <div class="service-list-icon">
-            <i class="fa fa-user"></i>
-          </div>
-          <h2>Service Title</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dignissimos ea, facilis iste laudantium
-            praesentium reprehenderit sint totam voluptate. Ad autem corporis deleniti est maiores nemo nihil, nisi
-            quibusdam vitae!
-          </p>
-        </div> <!-- .services-list -->
-      </div> <!-- .col-md-3 -->
-    </div> <!-- .row -->
-  </div> <!-- .container -->
-
-  <div class="service-section">
+  <div class="services-approaches gray">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
-          <h2>Service Title</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid, animi blanditiis explicabo
-            harum maxime minima molestias optio porro qui. Doloremque dolores eum illo iste obcaecati, quaerat veniam
-            veritatis vero?
-          </p>
-          <button class="btn btn-default">read more</button>
-        </div> <!-- .col-md-6 -->
-        <div class="col-md-6">
-          <img src="./assets/img/header-background.png" alt="" title="">
-        </div> <!-- .col-md-6 -->
+        <h2 class="section-title gray">title here</h2>
+        <hr>
+        <div class="content-group d-flex justify-content-center align-items-center flex-wrap">
+          <div class="col-md-4" *ngFor="let item of [1, 2, 3]">
+            <div class="content text-center">
+              <img src="./assets/img/about/brain.png" alt="">
+              <h2>Peace of Mind</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, asperiores autem blanditiis dolorum
+                eveniet ipsum laborum libero maiores necessitatibus nulla numquam officia perferendis quas quibusdam quo
+                recusandae saepe similique sint!
+              </p>
+            </div> <!-- .content -->
+          </div> <!-- .col-md-4 -->
+        </div> <!-- .content-group -->
       </div> <!-- .row -->
     </div> <!-- .container -->
-  </div> <!-- .service-section -->
+  </div> <!-- .services-approaches -->
+
+  <div class="how-we-help">
+    <div class="container">
+      <div class="row">
+        <h2 class="section-title">how we help!</h2>
+        <hr>
+        <div class="content-group d-flex justify-content-center align-items-center flex-wrap">
+          <div class="col-md-4" *ngFor="let item of [1, 2, 3, 4, 5, 6, 7, 8, 9]">
+            <div class="content text-center">
+              <img src="./assets/img/about/brain.png" alt="">
+              <h2>Service Title</h2>
+              <button class="btn btn-block btn-default" [routerLink]="'/services/1'">Learn more</button>
+            </div> <!-- .content -->
+          </div> <!-- .col-md-4 -->
+        </div> <!-- .content-group -->
+      </div> <!-- .row -->
+    </div> <!-- .container -->
+  </div> <!-- .how-we-help -->
+
+  <div class="when-you-need-us gray text-center">
+    <div class="container">
+      <div class="row">
+        <h2 class="section-title gray">When you need us?</h2>
+        <hr>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dignissimos dolor dolorum explicabo facere,
+          hic illo, ipsum itaque laudantium nulla quas quis quod saepe, sed similique soluta veniam voluptas voluptates.
+        </p>
+        <div class="content-group d-flex justify-content-center align-items-center flex-wrap">
+          <div class="col-md-6" *ngFor="let item of [1, 2, 3, 4, 5]">
+            <div class="content">
+              <img src="./assets/img/about/brain.png" alt="">
+              <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+            </div>
+          </div> <!-- .col-md-6 -->
+        </div> <!-- .content-group -->
+      </div> <!-- .row -->
+    </div> <!-- .container -->
+  </div> <!-- .when-you-need-us -->
+  <app-get-in-touch></app-get-in-touch>
 </section>

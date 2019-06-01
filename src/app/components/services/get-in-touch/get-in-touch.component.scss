@@ -1,0 +1,37 @@
+.get-in-touch {
+  background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+  color: #fff;
+
+  h2, button.btn-default {
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+
+    &:first-letter {
+      text-transform: capitalize;
+    }
+  }
+
+  h2 {
+    text-transform: capitalize;
+    margin-bottom: 1.5rem;
+  }
+
+  button.btn-default {
+    text-transform: uppercase;
+    background-color: #343a40;
+    border: 1px solid #343a40;
+    color: #fff;
+    padding: .5rem 3rem;
+    border-radius: 4rem;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+      background-color: transparent;
+      border: 1px solid #fff;
+    }
+  }
+}
