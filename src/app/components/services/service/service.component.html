@@ -8,10 +8,12 @@
         <h2 class="title">Title Here</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, dolorum facere itaque labore laborum
-          libero necessitatibus quaerat saepe temporibus? Accusantium blanditiis cumque ducimus porro veniam. Commodi
-          dolor expedita omnis voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, ad
-          blanditiis, distinctio id ipsa itaque magnam quasi reiciendis sed sequi soluta suscipit unde veritatis.
-          Delectus hic nostrum recusandae rem ut? Lorem ipsum dolor sit amet, consectetur
+          libero necessitatibus quaerat saepe temporibus? Accusantium blanditiis cumque ducimus porro veniam.
+        </p>
+        <h2 class="title">Title Here</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, dolorum facere itaque labore laborum
+          libero necessitatibus quaerat saepe temporibus? Accusantium blanditiis cumque ducimus porro veniam.
         </p>
       </div> <!-- .col-md-6 -->
       <div class="col-md-6">
@@ -21,15 +23,36 @@
   </div> <!-- .container -->
   <div class="service-section gray d-flex justify-content-center align-items-center flex-wrap">
     <div class="container">
-      <div class="row">
-        <h2 class="text-center section-title gray">Title Here</h2>
-        <hr>
-        <div class="col-md-6" *ngFor="let item of [1, 2, 3, 4, 5, 6]">
-          <div class="content">
-            <img src="./assets/img/about/brain.png" alt="">
-            <p>Lorem ipsum dolor sit amet</p>
-          </div> <!-- .content -->
-        </div> <!-- .col-md-6 -->
+      <h2 class="text-center section-title gray">Title Here</h2>
+      <hr>
+      <div class="row"
+           *ngFor="let item of [1, 2, 3]; let odd = odd; let even = even">
+        <div *ngIf="odd" class="content-group w-100 d-flex justify-content-center align-items-center flex-wrap">
+          <div class="col-md-6">
+            <h2>Lorem ipsum dolor sit amet</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci beatae consectetur consequatur,
+              doloremque error exercitationem facere hic maxime nobis omnis perspiciatis, reiciendis saepe soluta totam
+              ut, vel voluptate voluptatibus?
+            </p>
+          </div> <!-- .col-md-6 -->
+          <div class="col-md-6">
+            <img src="./assets/img/header-background.png" alt="">
+          </div> <!-- .col-md-6 -->
+        </div> <!-- .content-group -->
+        <div *ngIf="even" class="content-group w-100 d-flex justify-content-center align-items-center flex-wrap">
+          <div class="col-md-6">
+            <img src="./assets/img/header-background.png" alt="">
+          </div> <!-- .col-md-6 -->
+          <div class="col-md-6">
+            <h2>Lorem ipsum dolor sit amet</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci beatae consectetur consequatur,
+              doloremque error exercitationem facere hic maxime nobis omnis perspiciatis, reiciendis saepe soluta totam
+              ut, vel voluptate voluptatibus?
+            </p>
+          </div> <!-- .col-md-6 -->
+        </div> <!-- .content-group -->
       </div> <!-- .row -->
     </div> <!-- .container -->
   </div> <!-- .service-section -->

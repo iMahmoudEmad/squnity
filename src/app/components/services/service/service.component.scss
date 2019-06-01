@@ -24,29 +24,18 @@
     margin-top: 4rem;
     position: relative;
 
-    .content {
-      background-color: #fff;
-      padding: 1rem;
-      display: flex;
-      align-items: center;
-      box-shadow: 0 0 16px rgba(#000, .1);
-      margin-bottom: 2rem;
-      transition: all .2s ease-in-out;
+    .content-group {
+      padding: 4rem 0;
 
-      @media(min-width: 768px) {
-        &:hover {
-          transform: scale(1.1);
-        }
-      }
-
-      img {
-        width: 80px;
-        height: 80px;
-        margin-right: 1rem;
+      h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
       }
 
       p {
-        margin-bottom: 0;
+        font-size: 1rem;
+        line-height: 1.7rem;
       }
     }
   }
