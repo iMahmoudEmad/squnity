@@ -23,6 +23,10 @@ const routes: Routes = [
     loadChildren: './components/training/training.module#TrainingModule'
   },
   {
+    path: 'training/:id',
+    loadChildren: './components/training/train-item/train-item.module#TrainItemModule'
+  },
+  {
     path: 'team',
     loadChildren: './components/team/team.module#TeamModule'
   },

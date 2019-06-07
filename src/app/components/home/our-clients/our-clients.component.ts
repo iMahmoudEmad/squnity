@@ -12,7 +12,21 @@ export class OurClientsComponent implements OnInit {
     nav: true,
     autoplay: true,
     loop: true,
-    margin: 20
+    margin: 20,
+    responsive: {
+      0: {
+        items: 1
+      },
+      480: {
+        items: 2
+      },
+      768: {
+        items: 4
+      },
+      1024: {
+        items: 5
+      }
+    }
   };
 
   constructor() {

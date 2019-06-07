@@ -2,11 +2,11 @@ import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 
 import {Routes, RouterModule} from '@angular/router';
-import {SharedModule} from '../shared.module';
-import {TrainingComponent} from './training.component';
+import {TrainItemComponent} from './train-item.component';
+import {SharedModule} from '../../shared.module';
 
 const routes: Routes = [
-  {path: '', component: TrainingComponent}
+  {path: '', component: TrainItemComponent},
 ];
 
 @NgModule({
@@ -16,9 +16,9 @@ const routes: Routes = [
     SharedModule
   ],
   declarations: [
-    TrainingComponent,
+    TrainItemComponent
   ]
 })
 
-export class TrainingModule {
+export class TrainItemModule {
 }

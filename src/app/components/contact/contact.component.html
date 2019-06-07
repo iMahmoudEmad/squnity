@@ -1,7 +1,7 @@
 <app-header-section [title]="'contact squnity'"
                     [backgroundImage]="'./assets/img/header-background.png'"></app-header-section>
 <section class="contact mt-80">
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <div class="content">
         <h2 class="title">Contact squnity</h2>
@@ -9,18 +9,22 @@
           <div class="col-md-6 col-sm-12">
             <form>
               <div class="form-group">
-                <i class="far fa-user"></i>
+<!--                <i class="far fa-user"></i>-->
                 <input type="text" class="form-control" id="name" placeholder="Name">
               </div> <!-- .form-group -->
               <div class="form-group">
-                <i class="far fa-envelope"></i>
+<!--                <i class="far fa-envelope"></i>-->
                 <input type="email" class="form-control" id="email" placeholder="Email">
               </div> <!-- .form-group -->
               <div class="form-group">
-                <i class="far fa-comment-alt"></i>
+<!--                <i class="far fa-comment"></i>-->
+                <input type="text" class="form-control" id="subject" placeholder="Subject">
+              </div> <!-- .form-group -->
+              <div class="form-group">
+<!--                <i class="far fa-comment-alt"></i>-->
                 <textarea class="form-control" id="message" placeholder="Message"></textarea>
               </div> <!-- .form-group -->
-              <div class="form-group d-flex justify-content-center align-items-center">
+              <div class="form-group">
                 <button class="btn btn-default" type="submit">Submit</button>
               </div> <!-- .form-group -->
             </form>

@@ -21,12 +21,18 @@
     </div> <!-- .row -->
   </div> <!-- .container -->
 
-  <section class="make-us-special w-100">
-    <h2 class="title">what makes us special?</h2>
+  <section class="make-us-special w-100 gray">
     <div class="container">
+      <h2 class="section-title gray">what makes us special?</h2>
+      <hr>
+      <p class="section-description text-center">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis cupiditate dolor dolore doloremque
+        exercitationem facilis fugit illum mollitia natus necessitatibus nulla odit perspiciatis quae quasi, sed. Ex
+        ipsam maxime optio!
+      </p>
       <div class="row d-flex justify-content-center align-items-center">
         <div class="col-md-6" *ngFor="let item of special">
-          <div class="content d-flex justify-content-between align-items-center">
+          <div class="content">
             <img [src]="'./../../../assets/img/about/' + item.picture" [alt]="item.title" title="item.title">
             <div class="content-data">
               <h4>{{item.title}}</h4>
@@ -39,12 +45,51 @@
   </section> <!-- .make-us-special -->
 
   <section class="what-you-got">
-    <h2 class="title">What you got</h2>
-    <div class="content d-flex justify-content-center align-items-center flex-wrap text-center">
-      <div class="content-data" *ngFor="let service of services; let i = index">
-        <h3>{{i+1}}. {{service.title}}</h3>
-        <p>{{service.description}}</p>
-      </div>
-    </div> <!-- .content -->
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <h2 class="text-center section-title">Why choose squnity?</h2>
+        <hr>
+        <p class="text-center section-description">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab dolor, explicabo officia quidem sequi unde?
+          Aliquam
+          aperiam asperiores at culpa cupiditate ea explicabo, modi, numquam officia optio, quae quasi tempora.
+        </p>
+        <div class="content-group w-100 d-flex justify-content-center align-items-center flex-wrap">
+          <div class="content d-flex justify-content-center align-items-center">
+            <div class="platform">
+              <img src="./assets/img/about/brain.png" alt="">
+              <h4>UNMATCHED EXPERIENCE</h4>
+              <p>
+                Our team of experts have decades of practical offensive security experience and have performed dozens of
+                assessments for governmental agencies and leading corporations in financial, healthcare and
+                communication industries.
+              </p>
+            </div> <!-- .platform -->
+          </div> <!-- .content -->
+          <div class="content middle d-flex justify-content-center align-items-center">
+            <div class="platform">
+              <img src="./assets/img/about/compliance.png" alt="">
+              <h4>SHARP PERCISION</h4>
+              <p>
+                While no one can promise to find 100% of vulnerabilities within your systems, you can rest assured that
+                we do our best not to let anything slip away by performing both manual and automated vetting of your
+                system to secure it in every possible way with zero false positive issues (100% accuracy).
+              </p>
+            </div> <!-- .platform -->
+          </div> <!-- .content -->
+          <div class="content d-flex justify-content-center align-items-center">
+            <div class="platform">
+              <img src="./assets/img/about/gem.png" alt="">
+              <h4>RISK FREE</h4>
+              <p>
+                No matter whether we are testing a staging or a production system, our team of experts will always be
+                aware of the context of assessment to ensure your service never gets interrupted even while we are
+                keeping threat actors away.
+              </p>
+            </div> <!-- .platform -->
+          </div> <!-- .content -->
+        </div> <!-- .content-group -->
+      </div> <!-- .row -->
+    </div>
   </section> <!-- .what-you-got -->
 </section>

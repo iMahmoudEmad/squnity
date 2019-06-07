@@ -81,13 +81,18 @@ h2.section-title {
   margin: auto;
   background-color: #fff;
   display: inline-block;
-  width: 350px;
+  width: 420px;
   text-align: center;
   top: 4rem;
 
   @media(max-width: 767px) {
     width: 100%;
   }
+}
+
+p.section-description {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
 }
 
 .gray {

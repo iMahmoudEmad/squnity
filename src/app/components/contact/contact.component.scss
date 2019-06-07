@@ -1,10 +1,10 @@
 .contact {
-  padding: 4rem 0;
+  padding: 0 0 4rem;
 
   .content {
     width: 100%;
-    padding: 4rem;
-    box-shadow: 0 0 16px rgba(#000, .08);
+    padding: 0 4rem 4rem;
+    //box-shadow: 0 0 16px rgba(#000, .08);
     border-radius: 2rem;
 
     h2 {
@@ -18,8 +18,9 @@
 
     form {
       padding: 2rem;
-      box-shadow: 0 0 16px rgba(#000, .1);
-      border-radius: 2rem;
+      //box-shadow: 0 0 16px rgba(#000, .1);
+      //border-radius: 2rem;
+      //background-color: #FBFBFB;
 
       .form-group {
         margin-bottom: 1rem;
@@ -46,9 +47,10 @@
 
       input, textarea {
         border: none;
-        border-bottom: 1px solid #3598FE;
+        //border-bottom: 1px solid #D96A78;
         border-radius: 0;
-        padding-left: 1.5rem;
+        background-color: #FBFBFB;
+        //padding-left: 1.5rem;f
 
         &:focus {
           box-shadow: none;
@@ -57,12 +59,12 @@
 
       textarea {
         resize: none;
-        height: 100px;
+        height: 150px;
       }
 
       .btn-default {
-        background-color: #3598FE;
-        border: 1px solid #3598FE;
+        background-color: #D96A78;
+        border: 1px solid #D96A78;
         border-radius: 4px;
         color: #fff;
         text-transform: capitalize;
@@ -72,7 +74,7 @@
 
         &:hover {
           background-color: transparent;
-          color: #3598FE;
+          color: #D96A78;
         }
       }
     }
@@ -97,7 +99,7 @@
       }
 
       i {
-        color: #3598FE;
+        color: #D96A78;
         width: 20px;
         height: 20px;
         margin-right: .5rem;

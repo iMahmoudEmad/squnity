@@ -2,69 +2,73 @@
                     [backgroundImage]="'./assets/img/header-background.png'"></app-header-section>
 <section class="training">
   <div class="container">
-    <div class="row justify-content-center align-items-center">
-      <h2 class="section-title">training title</h2>
-      <hr>
-      <div class="training-section d-flex flex-wrap justify-content-center align-items-center">
-        <div class="col-md-4" *ngFor="let item of [1, 2, 3]">
-          <div class="content">
-            <img src="./assets/img/header-background.png" alt="">
+    <div class="training-header">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-6">
+          <h2 class="title">Header Here</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae corporis eius natus nemo repudiandae sit
+            tempore ullam unde. Atque consequuntur dolor eaque ipsam maiores necessitatibus nisi numquam obcaecati
+            officiis placeat.
+          </p>
+          <button class="btn btn-default" [routerLink]="'1'">Buy now</button>
+          <span>or</span>
+          <button class="btn btn-default" [routerLink]="'1'">Learn more</button>
+        </div> <!-- .col-md-6 -->
+        <div class="col-md-6">
+          <img src="./assets/img/header-background.png" alt="">
+        </div> <!-- .col-md-6 -->
+      </div> <!-- .row -->
+    </div> <!-- .training-header -->
+  </div> <!-- .container -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4" *ngFor="let item of [1, 2, 3]">
+        <div class="content">
+          <img src="./assets/img/header-background.png" alt="Traing title">
+          <div class="content-details">
+            <h2>Training title</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad adipisci at blanditiis deleniti,
-              dolore doloribus et impedit itaque magnam molestiae nam odio pariatur provident quaerat quidem sapiente
-              temporibus voluptatibus?
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             </p>
-          </div> <!-- .content -->
-        </div> <!-- .col-md-4 -->
-      </div> <!-- .training-section -->
+            <span>
+            12 Hour
+          </span>
+          </div> <!-- .content-details -->
+        </div> <!-- .content -->
+      </div> <!-- .col-md-4 -->
     </div> <!-- .row -->
   </div> <!-- .container -->
-  <div class="training-agenda gray">
+
+  <div class="training-table gray">
     <div class="container">
-      <div class="row">
-        <h2 class="section-title gray">agenda</h2>
+      <div class="row d-block">
+        <h2 class="text-center section-title gray">Hall of fame</h2>
         <hr>
-        <div class="agenda-content">
-          <div class="content d-flex justify-content-center flex-wrap" *ngFor="let item of [1, 2, 3, 4]">
-            <span>10:00 - 11:00</span>
-            <div class="content-description">
-              <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
-              <ul>
-                <li *ngFor="let item of [1, 2, 3]">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                </li>
-              </ul>
-            </div> <!--.content-description -->
-          </div> <!-- .content -->
-          <button class="btn btn-default">Buy now</button>
-        </div> <!-- .agenda-content -->
+        <p class="text-center section-description">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab dolor, explicabo officia quidem sequi unde? Aliquam
+          aperiam asperiores at culpa cupiditate ea explicabo, modi, numquam officia optio, quae quasi tempora.
+        </p>
+        <table class="table">
+          <thead class="thead-dark">
+          <tr>
+            <th scope="col" *ngFor="let item of [1, 2, 3, 4]; let index = index">#</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let item of [1, 2, 3, 4]; let index = index; let odd = odd">
+            <th scope="row">{{index + 1}}</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>
+              <span *ngIf="odd" class="opening">opening</span>
+              <span *ngIf="!odd" class="closing">closing</span>
+            </td>
+          </tr>
+          </tbody>
+        </table>
       </div> <!-- .row -->
     </div> <!-- .container -->
-  </div> <!-- .training-agenda -->
-  <div class="about-author">
-    <div class="container">
-      <div class="row">
-        <h2 class="section-title">author data</h2>
-        <hr>
-        <div class="author-content d-flex justify-content-center align-items-center flex-wrap">
-          <div class="col-md-3">
-            <img src="./assets/img/header-background.png" alt="">
-          </div> <!-- .col-md-3 -->
-          <div class="col-md-9">
-            <div class="author-data">
-              <h2>Author Name</h2>
-              <span>Front-end engineer</span>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam consequuntur corporis debitis
-                dignissimos
-                dolor dolores ducimus, ex fugiat inventore itaque laboriosam libero nemo provident quae sapiente
-                suscipit
-                veritatis. Illum, quos.
-              </p>
-            </div> <!-- .author-data -->
-          </div> <!-- .col-md-9 -->
-        </div> <!-- .author-content -->
-      </div> <!-- .row -->
-    </div> <!-- .container -->
-  </div> <!-- .about-author -->
+  </div>
 </section>

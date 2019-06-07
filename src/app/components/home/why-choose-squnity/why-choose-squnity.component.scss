@@ -7,6 +7,27 @@
     height: 400px;
     margin-bottom: 2rem;
 
+    @media(max-width: 767px) {
+      width: 100%;
+      height: auto;
+      margin-bottom: 0;
+
+      &:first-of-type {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+
+      &:last-of-type {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+
+      &.middle {
+        border-radius: 0 !important;
+        height: auto !important;
+      }
+    }
+
     &:first-of-type {
       border-top-left-radius: .5rem;
       border-bottom-left-radius: .5rem;

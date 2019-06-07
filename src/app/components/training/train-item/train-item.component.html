@@ -1,0 +1,224 @@
+<app-header-section [title]="'Training Item Header'"
+                    [backgroundImage]="'./assets/img/header-background.png'"></app-header-section>
+
+<section class="train-item">
+  <div class="container">
+    <div class="row">
+      <h2 class="section-title">training item</h2>
+      <hr>
+      <p class="section-details text-center">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci, aliquid corporis
+        cupiditate eius eveniet exercitationem explicabo illo ipsum iure laudantium molestias neque nihil optio
+        perferendis placeat quo similique vel!
+      </p>
+    </div> <!-- .row -->
+  </div> <!-- .container -->
+
+  <div class="training-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2 class="title">Course details</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ex facilis libero modi nam officiis
+            quos repellat rerum sed, unde? Alias dolor dolorem dolorum enim laboriosam numquam repudiandae soluta
+            voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto cumque minima perferendis
+            saepe
+            similique vel! Ab, autem, cum debitis distinctio enim ex incidunt, ipsa laudantium optio perferendis
+            possimus
+            quia velit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae delectus eius, illo ipsa labore
+            perferendis quas quo. Accusantium aut, dolorem, earum facilis minima officia optio provident quisquam quod,
+            rerum similique.
+          </p>
+          <button class="btn btn-default">book it now</button>
+        </div>
+
+
+        <div class="col-md-6">
+          <div class="col-md-12">
+            <div class="author-data">
+              <h2 class="author-title text-center">course author</h2>
+              <div class="author-content d-flex justify-content-center align-items-center flex-wrap">
+                <img class="author-picture" src="./assets/img/header-background.png" alt="author picture">
+                <div class="author-details">
+                  <h2 class="author-name">Mohamed k. fathy</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam magni mollitia nobis, officiis
+                    placeat
+                    quam soluta? Culpa esse expedita ipsa maxime minus non quisquam, repellat repudiandae sit velit
+                    veniam
+                    vitae!
+                  </p>
+                </div> <!-- .author-details -->
+              </div> <!-- .author-content -->
+            </div> <!-- .author-data -->
+          </div> <!-- .col-md-12 -->
+
+          <div class="col-md-12">
+            <h2 class="title">requirements</h2>
+            <ul class="list-unstyled">
+              <li *ngFor="let item of [1, 2, 3, 4, 5]">
+                <img src="./assets/img/about/gem.png" alt="">
+                test test
+              </li>
+            </ul>
+          </div> <!-- .col-md-12 -->
+
+          <div class="col-md-12">
+            <h2 class="title">Who should attend the course</h2>
+            <ul class="list-unstyled">
+              <li *ngFor="let item of [1, 2, 3, 4, 5]">
+                <img src="./assets/img/about/gem.png" alt="">
+                test test
+              </li>
+            </ul>
+          </div> <!-- .col-md-12 -->
+        </div> <!-- .col-md-6 -->
+      </div> <!-- .row -->
+    </div> <!-- .container -->
+  </div> <!-- .training-content -->
+
+  <div class="agenda gray">
+    <div class="container">
+      <div class="row">
+        <h2 class="section-title gray">agenda</h2>
+        <hr>
+        <p class="section-details text-center">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci, aliquid corporis
+          cupiditate eius eveniet exercitationem explicabo illo ipsum iure laudantium molestias neque nihil optio
+          perferendis placeat quo similique vel!
+        </p>
+      </div> <!-- .row -->
+    </div> <!-- .container -->
+
+    <div class="agenda-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h2 class="title">Title here</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque dignissimos distinctio, laboriosam magni
+              maiores molestias mollitia nam odit, porro, praesentium quisquam reprehenderit. Aperiam beatae molestias
+              nostrum optio perspiciatis soluta ullam?
+            </p>
+            <table class="table">
+              <thead class="thead-dark">
+              <tr>
+                <th scope="col" *ngFor="let item of [1, 2, 3, 4]; let index = index">#</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr *ngFor="let item of [1, 2, 3, 4]; let index = index; let odd = odd">
+                <th scope="row">{{index + 1}}</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>
+                  <span *ngIf="odd" class="opening">opening</span>
+                  <span *ngIf="!odd" class="closing">closing</span>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+            <button class="btn btn-default mt-4">Book now</button>
+          </div>
+          <div class="col-md-6">
+            <h2 class="title">Title here</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet at, enim eveniet exercitationem laudantium
+              magnam, necessitatibus non odit placeat provident, rem tenetur ullam. Beatae deserunt, eveniet
+              perspiciatis
+              quibusdam similique sint!
+            </p>
+            <button class="btn btn-default">Download agenda</button>
+          </div> <!-- .col-md-6 -->
+        </div> <!-- .row -->
+      </div> <!-- .container -->
+    </div> <!-- .agenda-content -->
+  </div> <!-- .agenda -->
+
+  <div class="benefits">
+    <div class="container">
+      <div class="row">
+        <h2 class="section-title">benefits</h2>
+        <hr>
+        <p class="section-details text-center">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci, aliquid corporis
+          cupiditate eius eveniet exercitationem explicabo illo ipsum iure laudantium molestias neque nihil optio
+          perferendis placeat quo similique vel!
+        </p>
+      </div> <!-- .row -->
+    </div> <!-- .container -->
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4" *ngFor="let item of [1, 2, 3]">
+          <div class="content text-center">
+            <img src="./assets/img/about/gem.png" alt="">
+            <h2>Title here</h2>
+          </div> <!-- .content -->
+        </div> <!-- .col-md-4 -->
+      </div> <!-- .row -->
+    </div> <!-- .container -->
+  </div> <!-- .benefits -->
+
+  <div class="certification gray">
+    <div class="container">
+      <div class="row">
+        <h2 class="section-title gray">certification</h2>
+        <hr>
+        <p class="section-details text-center">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci, aliquid corporis
+          cupiditate eius eveniet exercitationem explicabo illo ipsum iure laudantium molestias neque nihil optio
+          perferendis placeat quo similique vel!
+        </p>
+      </div> <!-- .row -->
+    </div> <!-- .container -->
+
+    <div class="certification-data">
+      <div class="container">
+        <div class="row justify-content-center align-items-center flex-wrap">
+          <img src="./assets/img/cert.png" alt="">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus esse quisquam ratione repellat. At
+            consequatur expedita iste molestiae placeat voluptate. Beatae dolorem in ipsa magni neque obcaecati quae
+            quia
+            vitae.
+          </p>
+        </div> <!-- .row -->
+      </div> <!-- .container -->
+    </div> <!-- .certification-data -->
+  </div> <!-- .certification -->
+
+  <div class="roles">
+    <div class="container">
+      <div class="row">
+        <h2 class="section-title">roles</h2>
+        <hr>
+      </div> <!-- .row -->
+    </div> <!-- .container -->
+
+    <div class="roles-data">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <h2 class="date-count">
+            Starting in: <span>614 days</span>
+          </h2>
+          <h2 class="date-count">
+            Starting in: <span>614 days</span>
+          </h2>
+        </div> <!-- .row -->
+        <button class="btn btn-default m-auto">Book now</button>
+        <div class="row">
+          <ul class="list-unstyled">
+            <h2 class="title">test test test</h2>
+            <li *ngFor="let item of [1, 2, 3, 4, 5]">
+              <span>- </span>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </li>
+          </ul>
+        </div> <!-- .row -->
+      </div> <!-- .container -->
+    </div> <!-- .roles-data -->
+  </div> <!-- .roles -->
+</section>
